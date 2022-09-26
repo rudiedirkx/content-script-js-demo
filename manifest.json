@@ -1,0 +1,19 @@
+{
+	"name": "Content Script JS",
+	"description": "Content script JS test",
+	"version": "0.1",
+
+	"content_scripts": [
+		{
+			"all_frames": true,
+			"js": ["content.js"],
+			"matches": ["<all_urls>"],
+			"run_at": "document_start"
+		}
+	],
+
+	"icons": {
+		"128": "128x128.png"
+	},
+	"manifest_version": 3
+}
